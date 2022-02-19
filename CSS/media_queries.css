@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1020px) {
+    /* Changing Padding only */
+     :root {
+        --pdlr: clamp(0.5rem, 4vw, 10rem);
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    /* Dispalying Menu Button */
+    .nav_items {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    /* Removing Hero Right */
+    .right_hero {
+        display: none;
+    }
+    /* Centering Left Hero */
+    .left_hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_hero h1 {
+        text-align: center;
+    }
+    .hero_btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 300px;
+    }
+    .hero_btn a {
+        margin-right: 0;
+        padding: 0.6rem 1.5rem;
+    }
+    .hero {
+        padding: 3rem var(--pdlr);
+    }
+    .left_hero p {
+        margin: 1.7rem 0;
+        text-align: center;
+    }
+}
