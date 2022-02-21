@@ -31,33 +31,33 @@
 // addDiv(7);
 
 
-// let div = document.getElementsByClassName('cont');
+let div = document.getElementsByClassName('article');
 
-// window.addEventListener("scroll", function() {
-//     console.log("Y offset is " + Math.floor(window.scrollY) + "\nThis is client Top " + (div[6].offsetTop));
-
-
-//     for (let index = 0; index < div.length; index++) {
+window.addEventListener("scroll", function() {
+    //console.log("Y offset is " + Math.floor(window.scrollY) + "\nThis is client Top " + (div[6].offsetTop));
 
 
-//         console.log("Y offset is " + Math.floor(window.scrollY + this.window.innerHeight) + "\nThis is client Top " + (div[index].offsetTop) + "\nindex : " + index);
+    for (let index = 0; index < div.length; index++) {
+
+
+        //console.log("Y offset is " + Math.floor(window.scrollY + this.window.innerHeight) + "\nThis is client Top " + (div[index].offsetTop) + "\nindex : " + index);
 
 
 
-//         if ((div[index].offsetTop) < window.pageYOffset + 400) {
-//             div[index].style.opacity = "1";
-//             div[index].style.transform = "scale(1)";
-//         } else {
-//             div[index].style.opacity = "0";
-//             div[index].style.transform = "scale(0)";
-//         }
+        if ((div[index].offsetTop) < window.pageYOffset + 500) {
+            div[index].style.opacity = "1";
+            div[index].style.transform = "scale(1)";
+        } else {
+            div[index].style.opacity = "0";
+            div[index].style.transform = "scale(0)";
+        }
 
-//     }
+    }
 
 
-//     // console.log(window.innerHeight + this.window.scrollY);
+    // console.log(window.innerHeight + this.window.scrollY);
 
-// })
+})
 
 
 let menu_open = document.getElementById('menu');
@@ -69,7 +69,7 @@ menu_open.addEventListener("click", function() {
 
     let menu_close = document.getElementById("close");
     menu_close.addEventListener("click", function() {
-        // let sideMenu = document.querySelector('.sideMenu');
+
         sideMenu.style.transform = `translateX(100%)`;
     })
 
