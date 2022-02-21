@@ -1,11 +1,11 @@
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1100px) {
     /* Changing Padding only */
      :root {
         --pdlr: clamp(0.5rem, 4vw, 10rem);
     }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 810px) {
     /* Dispalying Menu Button */
     .nav_items {
         display: none;
@@ -43,5 +43,12 @@
     .left_hero p {
         margin: 1.7rem 0;
         text-align: center;
+    }
+    /* Main Over here */
+    aside {
+        display: none;
+    }
+    .blog {
+        width: 100%;
     }
 }
