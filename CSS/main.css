@@ -34,8 +34,9 @@ main {
 }
 
 aside {
+    padding-left: clamp(1.8rem, 7vw, 6rem);
     width: 35%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 

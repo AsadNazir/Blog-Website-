@@ -1,48 +1,14 @@
-// window.addEventListener("wheel", function(Event) {
-//     //clear();
-//     if (Event.deltaY < 0) {
-//         console.log("Scrolling Up")
-//     } else if (Event.deltaY > 0) {
-//         console.log("Scrolling Down")
-//     }
-// });
-
-
-// let ele = document.querySelector(".cont");
-
-// ele.addEventListener("mousedown", function() {
-//     ele.style.backgroundColor = 'red';
-// })
-
-// ele.addEventListener("mouseup", function() {
-//     ele.style.backgroundColor = 'white';
-// })
-
-
-// function addDiv(number) {
-//     let body = document.getElementById("body");
-//     for (let i = 0; i < number; i++) {
-//         body.innerHTML += ` <div class="cont">
-//       This is an Awesome Div Container ${i+1}
-//   </div>`
-//     }
-// }
-
-// addDiv(7);
-
-
 let div = document.getElementsByClassName('article');
+let sideDiv = document.getElementsByClassName("aside_cont");
+
+
 
 window.addEventListener("scroll", function() {
-    //console.log("Y offset is " + Math.floor(window.scrollY) + "\nThis is client Top " + (div[6].offsetTop));
 
 
     for (let index = 0; index < div.length; index++) {
 
-
-        //console.log("Y offset is " + Math.floor(window.scrollY + this.window.innerHeight) + "\nThis is client Top " + (div[index].offsetTop) + "\nindex : " + index);
-
-
+        // Article Animation Over Here
 
         if ((div[index].offsetTop) < window.pageYOffset + 500) {
             div[index].style.opacity = "1";
@@ -54,12 +20,22 @@ window.addEventListener("scroll", function() {
 
     }
 
+    // Aside Animation Over Here
 
-    // console.log(window.innerHeight + this.window.scrollY);
+    for (let index = 0; index < sideDiv.length; index++) {
+
+        if ((sideDiv[index].offsetTop) < window.pageYOffset + 500) {
+            sideDiv[index].style.opacity = "1";
+            sideDiv[index].style.transform = "translateX(0%)";
+        } else {
+            sideDiv[index].style.opacity = "0";
+            sideDiv[index].style.transform = "translateX(50%)";
+        }
+    }
 
 })
 
-
+// Side Menu Over Here
 let menu_open = document.getElementById('menu');
 
 

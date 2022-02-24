@@ -3,9 +3,12 @@
      :root {
         --pdlr: clamp(0.5rem, 4vw, 10rem);
     }
+    .article_heading {
+        font-size: calc(var(--fs3) - 0px);
+    }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 840px) {
     /* Dispalying Menu Button */
     .nav_items {
         display: none;
@@ -50,6 +53,10 @@
     }
     .blog {
         width: 100%;
+    }
+    /* Article Heading Font Size Fixing */
+    .article_heading {
+        font-size: calc(var(--fs3) - -2px);
     }
 }
 

@@ -20,6 +20,9 @@
     --accent: rgb(164, 67, 255);
 }
 
+
+/* For All  */
+
 * {
     box-sizing: border-box;
 }
@@ -49,6 +52,9 @@ a {
     --fs5: clamp(0.8rem, 0.92vw, 1.2rem);
     --pdlr: clamp(0.5rem, 15vw, 12rem);
 }
+
+
+/* Header Over here */
 
 header {
     padding: 1rem var(--pdlr);
