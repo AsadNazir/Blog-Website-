@@ -84,4 +84,31 @@ aside>h1 {
 .News_letter {
     position: sticky;
     top: 3rem;
+    font-size: var(--fs4);
+}
+
+.News_letter p {
+    color: var(--foreground-secondary);
+}
+
+.News_letter input[type="email"] {
+    border-radius: 10px;
+    font-size: var(--fs4);
+    padding: 0.9rem;
+    width: 100%;
+    margin: 2rem 0;
+    color: var(--foreground-secondary);
+    border: 2px solid var(--foreground-tertiary);
+    background-color: var(--background-secondary);
+}
+
+.News_letter a {
+    padding: 0.7rem 1.8rem;
+    border-radius: 6rem;
+    background: var(--accent);
+    margin: 0 auto;
+    display: block;
+    color: white;
+    text-align: center;
+    width: clamp(8rem, 60%, 10rem);
 }

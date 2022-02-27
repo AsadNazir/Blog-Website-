@@ -1,6 +1,7 @@
 main {
     /* border: 2px solid red; */
     width: 100%;
+    margin: 0rem 0 4rem 0;
 }
 
 .blog_cont {
@@ -173,4 +174,19 @@ p {
 
 .article_heading a {
     color: var(--foreground-primary);
+}
+
+
+/* Load More Button Over Here */
+
+.loadMore {
+    padding: 0.7rem 1.8rem;
+    border-radius: 6rem;
+    background: var(--accent);
+    margin: 4rem auto;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: var(-fs3);
+    width: clamp(8rem, 60%, 10rem);
 }
