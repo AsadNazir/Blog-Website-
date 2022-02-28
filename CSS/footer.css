@@ -4,7 +4,7 @@ footer {
 
 .footer_upper {
     display: flex;
-    border: 2px solid;
+    /* border: 2px solid; */
     padding: 4rem var(--pdlr);
     justify-content: space-between;
 }
@@ -38,16 +38,36 @@ footer ul li {
     margin-top: 0.5rem;
 }
 
+footer ul li a:hover {
+    color: var(--accent);
+}
+
 .footer_box {
     font-size: var(--fs4);
     width: 25%;
 }
 
 #footer_box1 a img {
-    width: clamp(7rem, 50%, 13rem);
+    width: clamp(8rem, 50%, 11rem);
 }
 
 #footer_box1 p {
     margin: 0;
     margin-top: 1rem;
+    color: var(--foreground-secondary);
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.footer_lower {
+    padding: 1rem var(--pdlr);
+    text-align: center;
+    font-size: var(--fs4);
+    border-top: 3px solid var(--background-secondary);
+}
+
+.footer_lower a {
+    text-align: center;
+    font-size: var(--fs4);
+    color: var(--foreground-secondary);
 }

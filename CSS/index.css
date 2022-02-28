@@ -38,6 +38,7 @@ body {
     width: 100vw;
     box-sizing: border-box;
     background-color: var(--background-secondary);
+    scroll-behavior: smooth;
 }
 
 a {
